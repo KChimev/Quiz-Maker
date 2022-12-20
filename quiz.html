@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="quizstyles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Quiz Maker by Konstantin</title>
+    </head>
+    <body id="quiz-body">
+        <h1>Let`s make a quiz</h1>
+        <form id="quiz-form">
+            <div id="quiz-build">
+            <fieldset id="title">
+                <label>Give your quiz a title:
+                <input id="quiz-title" type="text" placeholder='Eg. "European 18th century history quiz"' >
+                </label>
+            </fieldset>
+            <fieldset class="quiz-type" id="quiz-type">
+                <label>Will this quiz be anonymous:</label>
+                <label for="anonymous-quiz"
+                ><input
+                  id="anonymous-quiz"
+                  type="radio"
+                  name="quiz-type"
+                  class="inline"
+                  value="anonymous"
+                  checked
+                />
+                Yes, do not require participant name.</label>
+                <label for="non-anonymous-quiz"
+                  ><input
+                    id="non-anonymous-quiz"
+                    type="radio"
+                    name="quiz-type"
+                    class="inline"
+                    value="non-anonymous"
+                  />
+                  No, do require participant name.</label
+                >
+
+                </fieldset>
+            <fieldset class="fieldset">
+                <label>Add a question:</label>
+                <input type="text" id="question-input">
+                <button type="button" id="add-question" class="add__Question"><span class="material-symbols-outlined">
+                    add
+                    </span></button>
+            </fieldset>
+            <fieldset id="answersDisplay" class="answers__Display">
+                <p id="added-question"></p>
+                <label>Add answer:</label>
+                <input type="text" id="answer">
+                <label for="true">
+                <input  class="check" id="true-answer" type="radio" name="answer-value" value="true" checked>True</label>
+                <label for="false">
+                    <input class="check" id="false-answer" type="radio" name="answer-value" value="false">False</label>
+                <button type="button" id="add-answer" class="add__Answer"><span class="material-symbols-outlined">
+                add
+                </span></button>
+            </fieldset>
+            </div>
+        <div id="preview-container">
+            <h2 id="preview-h2">Preview</h2>
+            <fieldset id="preview">
+            </fieldset>
+        </label>
+        </div>
+        <button type="button" id="create-quiz">Create</button>
+    </form>
+    </body>
+    <script type="text/javascript" src="quiz.js"></script>
+</html>
