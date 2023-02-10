@@ -6,3 +6,6 @@ Quiz can be created using the `Create Quiz` button.
 Made quiz can be sumbitted after choosing answers.
 Correct selected answers turn green while incorrect ones turn red.
 Open-source and free code. Feel free to take, improve upon and claim this code.
+
+![Finished version image](https://github.com/KChimev/Quiz-Maker/blob/main/finished/quiz.png?raw=true)
+![Finished version image](https://github.com/KChimev/Quiz-Maker/blob/main/finished/quiz1.png?raw=true)
